@@ -1,10 +1,10 @@
-package BaekJoon_Level1;
+package BaekJoon_Level1_1_10;
 
 
 /**
- * ´Ü°è : 1´Ü°è
- * ¹®Á¦¹øÈ£ : 2557
- * ¹®Á¦ : Hello World! ¸¦ Ãâ·ÂÇÏ½Ã¿À.
+ * ï¿½Ü°ï¿½ : 1ï¿½Ü°ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£ : 2557
+ * ï¿½ï¿½ï¿½ï¿½ : Hello World! ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï½Ã¿ï¿½.
  * 
  * @since : 2017.12.02
  * @author Yun Young
