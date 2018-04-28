@@ -1,4 +1,4 @@
-package BaekJoon_Level1_1_10;
+package BaekJoon_Level1;
 
 /**
  * We love kriii
@@ -13,7 +13,7 @@ package BaekJoon_Level1_1_10;
  * @author Yun Young
  *
  */
-public class WeloveKriii {
+public class WeloveKriii_05 {
 	public static void main(String[] args) {
 		System.out.println("강한친구 대한육군");
 		System.out.println("강한친구 대한육군");

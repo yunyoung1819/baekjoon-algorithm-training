@@ -1,4 +1,4 @@
-package BaekJoon_Level1_1_10;
+package BaekJoon_Level1;
 
 /**
  * 문제번호 7287
@@ -9,7 +9,7 @@ package BaekJoon_Level1_1_10;
  * @author Yun Young
  *
  */
-public class Acmicpc {
+public class Acmicpc_04 {
 	public static void main(String[] args) {
 		System.out.println(123);
 		System.out.println("yunyoung1819");

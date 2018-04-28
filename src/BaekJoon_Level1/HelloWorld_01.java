@@ -1,4 +1,4 @@
-package BaekJoon_Level1_1_10;
+package BaekJoon_Level1;
 
 
 /**
@@ -10,7 +10,7 @@ package BaekJoon_Level1_1_10;
  * @author Yun Young
  *
  */
-public class HelloWorld {
+public class HelloWorld_01 {
 	public static void main(String[] args){
 		System.out.println("Hello World!");
 	}

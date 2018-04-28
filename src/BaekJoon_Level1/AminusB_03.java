@@ -1,4 +1,4 @@
-package BaekJoon_Level1_1_10;
+package BaekJoon_Level1;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author : Yun Young
  *
  */
-public class AminusB {
+public class AminusB_03 {
 	
 	public static void main(String[] args){
 

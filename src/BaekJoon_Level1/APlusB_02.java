@@ -1,4 +1,4 @@
-package BaekJoon_Level1_1_10;
+package BaekJoon_Level1;
 
 import java.util.*;
 /**
@@ -9,7 +9,7 @@ import java.util.*;
  * @author Yun Young
  *
  */
-public class APlusB {
+public class APlusB_02 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
