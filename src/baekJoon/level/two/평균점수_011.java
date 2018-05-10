@@ -1,4 +1,4 @@
-package BaekJoon_Level2;
+package baekJoon.level.two;
 
 import java.util.Scanner;
 
@@ -21,7 +21,7 @@ import java.util.Scanner;
  * 출력 : 첫째 줄에 학생 5명의 평균 점수를 출력한다.
  *
  */
-public class 평균점수 {
+public class 평균점수_011 {
 	public static void main(String[] args) {
 		
 		int sum = 0;

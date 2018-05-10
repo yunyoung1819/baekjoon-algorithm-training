@@ -1,4 +1,4 @@
-package BaekJoon_Level1;
+package baekJoon.level.one;
 
 /**
  * 문제번호 7287
