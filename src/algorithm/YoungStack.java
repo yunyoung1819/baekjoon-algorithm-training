@@ -1,8 +1,7 @@
 package algorithm;
 
 public class YoungStack {
-	
-	public static void main(String[] args) {
+	public static void main(String args[]) {
 		Stack st = new Stack(100);
 		
 		st.push(5);
@@ -14,7 +13,6 @@ public class YoungStack {
 		st.printStack();
 		
 		st.pop();
-		
 		st.pop();
 		
 		st.push(15);
@@ -31,6 +29,6 @@ public class YoungStack {
 		st.push(30);
 		
 		st.peek();
+		
 	}
-
 }
