@@ -1,4 +1,4 @@
-package algorithm;
+package algorithm.stack;
 
 /**
  * JAVA를 이용한 Stack 구현

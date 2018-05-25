@@ -1,4 +1,4 @@
-package algorithm;
+package algorithm.stack;
 
 public class YoungStack {
 	public static void main(String args[]) {
