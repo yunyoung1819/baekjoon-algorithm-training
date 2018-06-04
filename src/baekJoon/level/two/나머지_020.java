@@ -30,6 +30,5 @@ public class 나머지_020 {
 			System.out.println((a * b) % c);
 			System.out.println((a % c * b % c) % c);
 		}
-		
 	}
 }
