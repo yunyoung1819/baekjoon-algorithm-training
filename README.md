@@ -3,16 +3,15 @@
 BaekJoon_Online_Judge
 =====================
 
+- - - 
+
 백준 온라인 저지 풀이
 <https://www.acmicpc.net/>
 
 저만의 방식으로 백준 알고리즘 문제를 풀어가는 프로젝트 입니다 <br>
 
-- - - 
 ### 단계별로 풀어보기
 
-- - -
- '''
 단계	     제목	    
 1	입/출력 받아보기
 2	사칙연산 도전하기
@@ -51,8 +50,8 @@ BaekJoon_Online_Judge
 35	구간 합, Segment Tree (RMQ, Segement Tree)
 36	네트워크 플로우
 37	컨벡스 헐
- ```
+
 
 Slowly but Steadly!<br>
 
-
+- - -
