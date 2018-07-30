@@ -21,7 +21,7 @@ public class X보다작은수_035 {
 		n = input.nextInt();
 		x = input.nextInt();
 	
-		// 1 <= N, X <= 10000)
+		// 1 <= N, X <= 10000
 		if(n < 1 || x > 10000) {
 			n = input.nextInt();
 			x = input.nextInt();
@@ -35,9 +35,7 @@ public class X보다작은수_035 {
 			// 주어지는 정수는 모두 1보다 크거나 같고 10,000 보다 작거나 같은 정수이다. 	
 			if(a[i] < 1 || a[i] > 10000) {
 				a[i] = input.nextInt();
-			}
-			// X보다 작은 수를 입력받은 순서대로 공백으로 구분해 출력한다. 
-			if(a[i] < x) {
+			}else if(a[i] < x) {
 				System.out.print(a[i]);
 				System.out.print(" ");
 			}
