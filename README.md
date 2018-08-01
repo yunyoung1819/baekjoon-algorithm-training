@@ -6,7 +6,7 @@
 백준 온라인 저지 풀이 
 <https://www.acmicpc.net/>
 
-- 작성자 : [윤영 Yun Young](https://github.com/yunyoung1819)
+작성자 : [윤 영 Yun Young](https://github.com/yunyoung1819)
 
 저만의 방식으로 백준 알고리즘 문제를 풀어가는 프로젝트 입니다 <br>
 
