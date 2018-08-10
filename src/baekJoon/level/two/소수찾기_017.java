@@ -42,6 +42,5 @@ public class 소수찾기_017 {
 			}
 		}
 		System.out.println(sosuCount);  // 출력하기
-		
 	}
 }
