@@ -17,10 +17,14 @@ import java.util.Scanner;
  * 
  * 출    력 : 첫째 줄부터 T개의 줄에 A와 B의 최소공배수를 입력받은 순서대로
  * 한 줄에 하나씩 출력한다. 
- *
+ * 
+ * 최대공약수와 최소공배수의 성질을 이용하면
+ * 최소공배수 = (a * b) / 최대공약수
+ * 최대공약수 = (a * b) / 최소공배수
+ * 가 되므로 최대공약수나 최소공배수 둘 중 하나만 구하면 나머지 하나는 쉽게 구할 수 있다.
  */
 public class 최소공배수_037 {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		
 	}
 }
