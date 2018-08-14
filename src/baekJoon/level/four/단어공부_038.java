@@ -23,14 +23,14 @@ public class 단어공부_038 {
 		char answer = '?'; 		 				
 		String word = input.next().toUpperCase();  
 		
-		for(int i = 0; i < word.length(); i++) {  // for i = 0 부터 word의 길이까지
-			count[word.charAt(i)-'A']++;            // 현재 알파벳 위치의 카운트 배열에 +1
-			if(max < count[word.charAt(i)-'A']) {   // if 현재 알파벳 카운트가 max보다 크다면
-				answer = word.charAt(i);          // answer = 현재 알파벳 
-				max = count[word.charAt(i)-'A'];    // max = 현재 알파벳의 카운트 수
+		for(int i = 0; i < word.length(); i++) {          // for i = 0 부터 word의 길이까지
+			count[word.charAt(i)-'A']++;                  // 현재 알파벳 위치의 카운트 배열에 +1
+			if(max < count[word.charAt(i)-'A']) {         // if 현재 알파벳 카운트가 max보다 크다면
+				answer = word.charAt(i);                  // answer = 현재 알파벳 
+				max = count[word.charAt(i)-'A'];          // max = 현재 알파벳의 카운트 수
 			}else if(max == count[word.charAt(i)-'A']) {  // else if 현재 알파벳 카운트가 max와 같다면
-				answer = '?';           				// answer = '?'
-			}                                           // 위 과정을 문자열의 길이만큼 반복한다.
+				answer = '?';           				  // answer = '?'
+			}                                             // 위 과정을 문자열의 길이만큼 반복한다.
 		}
 		System.out.println(answer);
 	}	
