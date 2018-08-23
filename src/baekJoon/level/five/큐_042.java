@@ -68,5 +68,6 @@ public class 큐_042 {
                 }
             }
         }
+        sc.close();
     }
 }
