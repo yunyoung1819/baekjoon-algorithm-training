@@ -30,7 +30,7 @@ import java.util.Scanner;
  * ()()()()(()()())()		YES
  * (()((())()(				NO
  */
-public class 괄호_044 {
+public class 괄호_045 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
