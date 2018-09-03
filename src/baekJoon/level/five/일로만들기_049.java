@@ -33,7 +33,7 @@ import java.util.Scanner;
  *
  * 세 값 중의 최소값이 들어가게 된다.
  */
-public class 일로만들기_048 {
+public class 일로만들기_049 {
 	public static int[] d;
 	
 	public static int go(int n) {
