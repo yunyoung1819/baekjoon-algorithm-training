@@ -25,7 +25,7 @@ public class 진법변환2_054 {
 		StringBuilder result = new StringBuilder();
 		
 		while(n > 0) {
-			int r = n % b;  //10진법 수 n을 바꾸려는 b진법 수로 계속 나눈다.
+			int r = n % b;  // 10진법 수 n을 바꾸려는 b진법 수로 계속 나눈다.
 			if(r < 10) {
 				result.append((char)(r + '0'));
 			}else {
@@ -33,6 +33,7 @@ public class 진법변환2_054 {
 			}
 			n /= b;
 		}
+		
 		System.out.println(result.reverse());
 		
 		sc.close();
