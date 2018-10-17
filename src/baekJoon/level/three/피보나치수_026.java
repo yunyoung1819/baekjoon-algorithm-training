@@ -21,6 +21,7 @@ public class 피보나치수_026 {
 		int n = sc.nextInt();
 		
 		System.out.println(Fibonacci(n));
+		
 		sc.close();
 	}
 	
