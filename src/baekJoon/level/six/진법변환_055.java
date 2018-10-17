@@ -25,17 +25,18 @@ public class 진법변환_055 {
 		String[] line = input.nextLine().split(" ");
 		
 		String n = line[0];	// B진법인 수 N
-		int b = Integer.valueOf(line[1]); // B진법의 B  
+		int b = Integer.valueOf(line[1]); // B진법의 B
 	    int result = 0;
 	    
 	    for(int i = 0; i < n.length(); i++) {
 	    	char number = n.charAt(i);
 	    	if('0' <= number && number <= '9') {  		  // 숫자가 0~9 사이일 때 
 	    		result = result * b + (number - '0'); 
-	    	}else {
+	    	} else {
 	    		result = result * b + (number - 'A' + 10); // 숫자가 10 이상일 때 
 	    	}
 	    }
+	    
 	    System.out.println(result);
 	    input.close();
 	}
