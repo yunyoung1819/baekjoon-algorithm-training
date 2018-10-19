@@ -1,4 +1,4 @@
-package algorithm.stack;
+package algorithm.datastructure;
 
 public class YoungStack {
 	public static void main(String args[]) {

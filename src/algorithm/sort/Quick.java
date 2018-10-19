@@ -1,4 +1,4 @@
-package algorithm.stack;
+package algorithm.sort;
 
 /**
  * 퀵 소트
