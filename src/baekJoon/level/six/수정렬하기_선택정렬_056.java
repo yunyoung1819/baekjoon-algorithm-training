@@ -54,9 +54,9 @@ public class 수정렬하기_선택정렬_056 {
 			    	indexMin = k;
 			    }
 			}
-			temp = data[indexMin]; // 최소값 임시저장
+			temp = data[indexMin]; 	  // 최소값 임시저장
 			data[indexMin] = data[j]; // 최소값 위치에 선택위치의 원소와 교환
-			data[j] = temp; // 선택 위치에 최소값 교환 
+			data[j] = temp; 		  // 선택 위치에 최소값 교환 
 		}
 	}
 }
