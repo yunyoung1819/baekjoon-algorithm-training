@@ -13,13 +13,13 @@ import java.util.Scanner;
  * 입   력 : 첫째 줄에 N이 주어진다. N은 1보다 크거나 같고, 9보다 작거나 같다.
  * 출   력 : 출력형식과 같게 N*1 부터 N*9 까지 출력한다.
  */
-public class Gugudan_059 {
+public class 구구단_059 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		
 		for(int i = n; i <= n; i++) {
-			for(int j = 1; j <=9; j++) {
+			for(int j = 1; j <= 9; j++) {
 				System.out.println(i + " * " + j + " = " + (i*j));
 			}
 		}
