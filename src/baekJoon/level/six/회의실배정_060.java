@@ -81,7 +81,7 @@ class Meeting implements Comparable<Meeting> {
 	}
 	
 	@Override
-	public int compareTo(Meeting meeting) {
+	public int compareTo(Meeting meeting) { // compareTo : 2개의 두 문자열을 비교하고 int 형 값을 반환하는 메소
 		if(this.endTime < meeting.getEndTime()) {
 			return -1;
 		}else if(this.endTime == meeting.getEndTime()) {
