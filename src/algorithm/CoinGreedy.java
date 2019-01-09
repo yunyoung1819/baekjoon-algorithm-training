@@ -1,4 +1,4 @@
-package algorithm.greedy;
+package algorithm;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

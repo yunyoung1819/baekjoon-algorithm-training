@@ -1,4 +1,4 @@
-package algorithm.sort;
+package algorithm;
 
 /**
  * 퀵 정렬(Quick Sort)

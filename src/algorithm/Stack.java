@@ -1,4 +1,4 @@
-package algorithm.datastructure;
+package algorithm;
 
 /**
  * JAVA를 이용한 Stack 구현
