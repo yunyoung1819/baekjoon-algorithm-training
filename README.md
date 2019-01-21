@@ -1,15 +1,15 @@
-# 백준 알고리즘 문제 풀이 프로젝트 (BaekJoon_Online_Judge)
+# 백준 알고리즘 문제 풀이 (BaekJoon_Online_Judge)
 
 
 - - - 
 
-백준 온라인 저지 풀이 
+백준 온라인 저지 문제 풀이 
 <https://www.acmicpc.net/>
 
 작성자 : [윤 영 Yun Young](https://github.com/yunyoung1819)
 
 저만의 방식으로 백준 알고리즘 문제를 풀어가는 프로젝트 입니다 <br>
-
+한 개의 폴더당 10개의 알고리즈 문제 풀이 
 
 ### 단계별로 풀어보기
 ```
@@ -52,8 +52,4 @@
 36	네트워크 플로우
 37	컨벡스 헐
 ```
-
-### 한개 폴더 당 10개의 알고리즘 문제 
-### Slowly but Steadly!<br>
-
 - - -
