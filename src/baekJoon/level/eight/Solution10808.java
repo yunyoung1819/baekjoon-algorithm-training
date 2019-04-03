@@ -2,8 +2,6 @@ package baekJoon.level.eight;
 
 import java.util.Scanner;
 
-import java.util.Scanner;
-
 /**
  * 문제번호 : 10808번 
  * 문제제목 : 알파벳 개수 
@@ -17,7 +15,6 @@ import java.util.Scanner;
  *
  */
 public class Solution10808 {
-	
 	public static void main(String[] args) {
 		Solution10808 solution = new Solution10808();
 		solution.go();
@@ -26,8 +23,8 @@ public class Solution10808 {
 	public void go() {
 		Scanner sc = new Scanner(System.in);
 		String s = sc.next();
-		char[] alphabet = new char[26];  // 알파벳 소문자 26개 
-		int[] answer = new int[26];		 // count 배열 
+		char[] alphabet = new char[26];	// 알파벳 소문자 26개 
+		int[] answer = new int[26];	// count 배열 
 		
 		// 알파벳 소문자 배열 만들기 
 		for (int i = 0; i < alphabet.length; i++) {
