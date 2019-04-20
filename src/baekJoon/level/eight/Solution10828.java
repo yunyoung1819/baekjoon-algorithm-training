@@ -22,7 +22,6 @@ import java.util.Scanner;
  * 
  */
 public class Solution10828 {
-
 	public static void main(String[] args) {
 		Solution10828 solution = new Solution10828();
 		solution.go();
@@ -30,44 +29,43 @@ public class Solution10828 {
 	
 	public void go() {
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();      // 명령의 수 
-		int[] stack = new int[100000];  // 스택 
+		int n = sc.nextInt();	// 명령의 수 
+		int[] stack = new int[100000];	// 스택 
 		int idx = -1;
 		
 		for (int i = 0; i < n; i++) {
 			String cmd = sc.next();
-			
 			switch (cmd) {
-				case "push" :
-					int push = sc.nextInt();
-					idx++;
-					stack[idx] = push;
-					break;
-				case "pop" :
-					if (idx == -1) {
-						System.out.println(idx);
-					} else {
-						System.out.println(stack[idx]);
-						idx--;
-					} 
-					break;
-				case "size" :
-					System.out.println(idx + 1);
-					break;
-				case "empty" :
-					if (idx == -1) {
-						System.out.println(1);
-					} else {
-						System.out.println(0);
-					}
-					break;
-				case "top" :
-					if (idx == -1) {
-						System.out.println(idx);
-					} else {
-						System.out.println(stack[idx]);
-					}
-					break;
+			case "push" :
+				int push = sc.nextInt();
+				idx++;
+				stack[idx] = push;
+				break;
+			case "pop" :
+				if (idx == -1) {
+					System.out.println(idx);
+				} else {
+					System.out.println(stack[idx]);
+					idx--;
+				} 
+				break;
+			case "size" :
+				System.out.println(idx + 1);
+				break;
+			case "empty" :
+				if (idx == -1) {
+					System.out.println(1);
+				} else {
+					System.out.println(0);
+				}
+				break;
+			case "top" :
+				if (idx == -1) {
+					System.out.println(idx);
+				} else {
+					System.out.println(stack[idx]);
+				}
+				break;
 			}
 		}
 		sc.close();
