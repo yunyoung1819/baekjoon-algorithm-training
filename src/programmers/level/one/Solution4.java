@@ -20,7 +20,6 @@ class Solution4 {
 	boolean solution(String s) {
 		String words = s.toLowerCase();
 		boolean answer = true;
-		
         int pCount = 0;
         int yCount = 0;
         
