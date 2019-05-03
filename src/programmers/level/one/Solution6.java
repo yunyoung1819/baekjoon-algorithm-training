@@ -19,11 +19,9 @@ import java.util.stream.IntStream;
  */
 class Solution6 {
 	public double solution(int[] arr) {
-		double answer = 0;
-		
+		double answer = 0;	
 		IntStream result = Arrays.stream(arr);
 		answer = result.average().getAsDouble();
-		
 		return answer;
-}
+	}
 }
