@@ -18,9 +18,39 @@ package programmers.level.one;
  * n은 1 이상, 25 이하인 자연수 입니다.
  *
  */
-public class Solution10 {
+public class Caesar {
+	
 	// 실행을 위한 테스트 코드 
 	public static void main(String[] args) {
+		Caesar c = new Caesar();
+		String s = "X x Y y Z z";
+		int n = 2;
+		c.caesar(s, n);
+	}
+	
+	public String caesar(String s, int n) {
+		String answer = "";
+		char[] alphabet = new char[s.length()];
+		alphabet = s.toCharArray();
 		
+		for (int i = 0; i < alphabet.length; i++) {
+			// 대문자 A ~ Z : 65 ~ 90, 소문자 a ~ z : 97 ~ 122 공백 : 32
+			if (alphabet[i] >= 65 && alphabet[i] <= 90) {
+				alphabet[i] += n;
+				if (alphabet[i] > 90) {
+					alphabet[i] -= 26;
+				}
+			} else if (alphabet[i] >= 97 && alphabet[i] <= 122) {
+				alphabet[i] += n;
+				if (alphabet[i] > 122) {
+					alphabet[i] -= 26;
+				}
+			} else if (alphabet[i] == 32) {
+				alphabet[i] = 32;
+			}
+		}
+		answer = new String(alphabet);
+		System.out.print(answer);
+		return answer;
 	}
 }
