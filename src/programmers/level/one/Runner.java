@@ -21,5 +21,37 @@ import java.util.HashMap;
  *
  */
 public class Runner {
+	public static void main(String[] args) {
+		// System.out.println(solution(new String[] {"leo", "kiki", "eden"}, new String[] {"eden", "kiki"}));
+		// System.out.println(solution(new String[] {"marina", "josipa", "nikola", "vinko", "filipa"}, new String[] {"josipa", "filipa", "marina", "nikola"}));
+		// System.out.println(solution(new String[] {"mislav", "stanko", "mislav", "ana"}, new String[] {"stanko", "ana", "mislav"}));
+	}
 	
+	static String solution(String[] participant, String[] completion) {
+		String answer = "";
+		HashMap<String, Integer> map = new HashMap<>();
+		
+		// map에 동명이인을 고려해서 참가자 넣기
+		for (String runner: participant) {
+			if (map.get(runner) == null) {
+				map.put(runner, 1);
+			} else {  // value값이 2 이상인 경우 동명이인 
+				int value = map.get(runner) + 1;
+				map.put(runner, value);
+			}
+		}
+		
+		for (String runner: completion) {
+			int value = map.get(runner) - 1;
+			map.put(runner, value);
+		}
+		
+		for (String runner: map.keySet()) {
+			if (map.get(runner) == 1) {
+				answer = runner;
+			}
+		}
+
+		return answer;
+	}
 }
