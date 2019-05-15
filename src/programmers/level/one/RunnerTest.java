@@ -1,8 +1,8 @@
 package programmers.level.one;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 // test code
 public class RunnerTest {
