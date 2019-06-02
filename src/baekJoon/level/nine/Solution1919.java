@@ -1,10 +1,9 @@
 package baekJoon.level.nine;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * @date 2019.05.24
+ * @date 2019.05.29
  * @author yun young
  * 
  * @문제번호 : 1919번 
@@ -32,6 +31,6 @@ public class Solution1919 {
 	}
 	
 	private void go() {
-		
+	
 	}
 }
