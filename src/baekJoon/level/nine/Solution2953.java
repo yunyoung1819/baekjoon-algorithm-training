@@ -28,6 +28,25 @@ public class Solution2953 {
 
 	private void go() {
 		Scanner sc = new Scanner(System.in);
+		int[][] score = new int[5][4];
+		int[] participant = new int[5];
+		int max = 0, number = 0;
+		
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 4; j++) {
+				score[i][j] = sc.nextInt();
+				participant[i] += score[i][j];
+			}
+		}
+		
+		for (int i = 0; i < participant.length; i++) {
+			if (max < participant[i]) {
+				max = participant[i];
+				number = i + 1;
+			}
+		}
+		
+		System.out.printf("%d %d", number, max);
 		sc.close();
 	}
 }

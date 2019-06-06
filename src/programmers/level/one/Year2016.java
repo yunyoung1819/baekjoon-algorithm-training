@@ -32,7 +32,7 @@ public class Year2016 {
 		int[] date = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 		int allDate = 0;
 		
-		// 해당 월 전까지의 전체 일수 
+		// 해당 월 전까지의 전체 일수를 구한다. 
 		for (int i = 0; i < month-1; i++) {
 			allDate = allDate + date[i];
 		}
