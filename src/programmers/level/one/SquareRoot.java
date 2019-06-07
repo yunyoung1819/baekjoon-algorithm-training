@@ -25,8 +25,7 @@ public class SquareRoot {
 		try {
 			final long sqrt = (long) Math.sqrt(n);
 			final long pow  = (long) Math.pow(sqrt, 2);	
-			return (long) (pow == n ? Math.pow((sqrt + 1), 2) : -1);
-			
+			return (long) (pow == n ? Math.pow((sqrt + 1), 2) : -1);	
 		} catch (Exception e) {
 			e.printStackTrace();
 			return -1;
