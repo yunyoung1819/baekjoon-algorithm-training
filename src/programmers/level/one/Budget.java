@@ -28,8 +28,8 @@ import java.util.Arrays;
 public class Budget {
 	public static void main(String[] args) {
 		Budget budget = new Budget();
-		//System.out.println(budget.solution(new int[] {1,3,2,5,4}, 9));
-		//System.out.println(budget.solution(new int[] {2,2,3,3}, 10));
+		System.out.println(budget.solution(new int[] {1,3,2,5,4}, 9));
+		System.out.println(budget.solution(new int[] {2,2,3,3}, 10));
 	}
 
 	public int solution(int[] d, int b) {
