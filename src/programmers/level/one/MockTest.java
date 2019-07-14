@@ -1,5 +1,10 @@
 package programmers.level.one;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 문제제목 : 모의고사 
  * 문제링크 : https://programmers.co.kr/learn/courses/30/lessons/42840
@@ -25,11 +30,55 @@ package programmers.level.one;
  */
 public class MockTest {
 	public static void main(String[] args) {
+		int[] answer = {1,2,3,4,5};
 		MockTest mockTest = new MockTest();
-		mockTest.solution();
+		System.out.println(mockTest.solution(answer));
 	}
 
-	private void solution() {
+	private int[] solution(int[] answer) {
+		int[] student1 = {1,2,3,4,5,1,2,3,4,5};
+		int[] student2 = {2,1,2,3,2,4,2,5,2,1,2,3,2,4,2,5};
+		int[] student3 = {3,3,1,1,2,2,4,4,5,5,3,3,1,1,2,2,4,4,5,5};
 		
+		Map<Integer, Integer> answerCountMap = new HashMap<>();
+		answerCountMap.put(1, 0);
+		answerCountMap.put(2, 0);
+		answerCountMap.put(3, 0);
+		
+		// 정답 개수 Count
+		for (int i = 0; i < answer.length; i++) {
+			if (student1[i%student1.length] == answer[i]) {
+				answerCountMap.replace(1, answerCountMap.get(1)+1);
+			}
+			if (student2[i%student2.length] == answer[i]) {
+				answerCountMap.replace(2, answerCountMap.get(2)+1);
+			}
+			if (student3[i%student3.length] == answer[i]) {
+				answerCountMap.replace(3, answerCountMap.get(3)+1);
+			}
+		}
+		
+		// 최대 정답갯수 구하기 
+		int maxAnswerCount = Math.max(answerCountMap.get(1), Math.max(answerCountMap.get(2), answerCountMap.get(3)));
+		
+		// 학생 리스트 생성 
+		ArrayList<Integer> highestStudent = new ArrayList<>();
+		
+		for (Integer key : answerCountMap.keySet()) {
+			if (answerCountMap.get(key) == maxAnswerCount) {
+				highestStudent.add(key);
+			}
+		}
+		
+		// 정렬 및 배열로 변환 
+		Collections.sort(highestStudent);
+		
+		int[] result = new int[highestStudent.size()];
+		
+		for (int i = 0; i < result.length; i++) {
+			result[i] = highestStudent.get(i);
+		}
+		
+		return result;
 	}
 }
