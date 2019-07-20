@@ -36,7 +36,7 @@ public class Solution1920 {
 		}
 	}
 
-	private int binarySearch(int[] arr, int targetNumber) {
+	public int binarySearch(int[] arr, int targetNumber) {
 		int high = arr.length -1, low = 0, mid = 0;
 		
 		while (low <= high) {
