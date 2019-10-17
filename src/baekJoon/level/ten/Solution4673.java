@@ -32,11 +32,6 @@ public class Solution4673 {
 	private static boolean[] isNotSelfNumber = new boolean[10001];
 	
 	public static void main(String[] args) {
-		Solution4673 solution = new Solution4673();
-		solution.go();
-	}
-
-	private void go() {	
 		for (int i = 1; i < 10000; i++) {
 			getDn(i);
 		}
@@ -48,7 +43,7 @@ public class Solution4673 {
 		}
 	}
 
-	private int getDn(int n) {
+	private static int getDn(int n) {
 		int dn = 0;
 		
 		if (n < 10) {	// 1의 자리 
