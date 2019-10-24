@@ -1,5 +1,7 @@
 package baekJoon.level.ten;
 
+import java.util.Scanner;
+
 /**
  * 문제번호 : 2562번 
  * 문제제목 : 최댓값 
@@ -17,5 +19,33 @@ package baekJoon.level.ten;
  *
  */
 public class Solution2562 {
+	
+	static int[] number = new int[9];
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		for (int i = 0; i < 9; i++) {
+			number[i] = sc.nextInt();
+		}
+		
+		Solution2562 solution = new Solution2562();
+		solution.getMaximumValueInArray(number);
+		
+		sc.close();
+	}
 
+	private void getMaximumValueInArray(int[] num) {
+		int index = 0;
+		int maxValue = 0;
+		
+		for (int i = 0; i < 9; i++) {
+			if (maxValue < num[i]) {
+				maxValue = num[i];
+				index = i + 1;
+			}
+		}
+		System.out.println(maxValue);
+		System.out.println(index);
+	}
 }
