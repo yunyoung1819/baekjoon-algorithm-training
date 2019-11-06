@@ -32,7 +32,7 @@ public class DeleteSmallestNumber {
 		
 		if (list.size() != 1) {
 			for (int i = 1; i < list.size(); i++) {
-				int minValue = list.get(0);
+				int minValue = list.get(index);
 				if (list.get(i) < minValue) {
 					minValue = list.get(i);
 					index = i;
