@@ -20,20 +20,17 @@ import java.util.Scanner;
 public class CoveringCellPhoneNumber {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
 		String phoneNumber = sc.next();
 		CoveringCellPhoneNumber coveringCellPhoneNumber = new CoveringCellPhoneNumber();
 		System.out.println(coveringCellPhoneNumber.solution(phoneNumber));
-		
 		sc.close();
 	}
 
 	private String solution(String phone_number) {
 		int phoneNumberLength = phone_number.length();
-		String frontNumber = phone_number.substring(0, phoneNumberLength-4);
+		String frontNumber = phone_number.substring(0, phoneNumberLength-4).replaceAll(".", "*");
 		String backNumber = phone_number.substring(phoneNumberLength-4, phoneNumberLength);
-		String replaceNumber = frontNumber.replaceAll(".", "*");
-		String answer = replaceNumber.concat(backNumber);
+		String answer = frontNumber.concat(backNumber);
 		
 		return answer;
 	}
