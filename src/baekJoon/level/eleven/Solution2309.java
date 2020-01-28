@@ -24,6 +24,40 @@ import java.util.Scanner;
 public class Solution2309 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int[] dwarf = new int[9];
+		int[] dwarfs = new int[9];
+		boolean[] answer = new boolean[9];
+		int sum = 0;
+		int n = 9;
+		
+		for (int i = 0; i < n; i++) {
+			dwarfs[i] = sc.nextInt();
+			sum += dwarfs[i];
+		}
+		
+		for (int i = 0; i < n; i++) {
+			boolean search = false;
+			for (int j = i + 1; j < n; j++) {
+				if (sum - dwarfs[i] - dwarfs[j] == 100) {
+					answer[i] = true;
+					answer[j] = true;
+					search = true;
+					break;
+				}
+			}
+			if (search) break;
+		}
+		
+		for (int i = 0; i < n; i++) {
+			if (answer[i]) {
+				dwarfs[i] = 100;
+			}
+		}
+		Arrays.sort(dwarfs);
+		
+		for (int i = 0; i < n - 2; i++) {
+			System.out.println(dwarfs[i]);
+		}
+		
+		sc.close();
 	}
 }
