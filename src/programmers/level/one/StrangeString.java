@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * 문제번호 : Level 1
- * 문제제목 : 이상한 문자 만들
+ * 문제제목 : 이상한 문자 만들기 
  * 문제링크 : https://programmers.co.kr/learn/courses/30/lessons/12930?language=java
  * 작 성 일 : 2020.04.04
  * 작 성 자 : YUN YOUNG
@@ -50,7 +50,6 @@ public class StrangeString {
 			} else {
 				result.append(new String(charArray));
 			}
-			
 		}
 		return result.toString();
 	}
