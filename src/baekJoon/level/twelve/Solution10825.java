@@ -26,7 +26,6 @@ import java.util.Scanner;
 public class Solution10825 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		// 학생의 수 N이 주어진다.
 		int N = sc.nextInt();
 		String[][] students = new String[N][4];
 		
@@ -54,13 +53,10 @@ public class Solution10825 {
 				// 국어 점수가 감소하는 순서로 
 				return Integer.compare(Integer.parseInt(student2[1]), Integer.parseInt(student1[1]));
 			}
-			
 		});
-		
 		for (int i = 0; i < N; i++) {
 			System.out.println(students[i][0]);
 		}
-		
 		sc.close();
 	}
 }
