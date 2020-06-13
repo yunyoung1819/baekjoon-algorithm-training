@@ -1,6 +1,5 @@
 package baekJoon.level.ten;
 
-import static org.junit.jupiter.api.Assumptions.assumingThat;
 
 import java.util.Scanner;
 

@@ -2,7 +2,7 @@ package programmers.level.one;
 
 import static org.junit.Assert.assertEquals;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 // test code
 public class RunnerTest {
