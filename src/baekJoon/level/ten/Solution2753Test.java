@@ -1,9 +1,9 @@
 package baekJoon.level.ten;
 
-import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 
 public class Solution2753Test {
 	Solution2753 solution = new Solution2753();
