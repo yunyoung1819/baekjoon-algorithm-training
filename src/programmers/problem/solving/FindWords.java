@@ -1,4 +1,4 @@
-package programmers.challenge;
+package programmers.problem.solving;
 
 import java.util.*;
 
@@ -9,7 +9,7 @@ import java.util.*;
  * 존재하는지 알아내는 프로그램을 작성하세요.
  * 대소문자를 구분하지 않습니다. 문자열의 길이는 100을 넘지 않습니다.
  */
-public class Problem01 {
+public class FindWords {
     public int solution(String str, char t) {
         int answer = 0;
         str = str.toUpperCase();
@@ -21,7 +21,7 @@ public class Problem01 {
     }
 
     public static void main(String[] args) {
-        Problem01 T = new Problem01();
+        FindWords T = new FindWords();
         Scanner kb = new Scanner(System.in);
         String str = kb.next();
         char c = kb.next().charAt(0);
