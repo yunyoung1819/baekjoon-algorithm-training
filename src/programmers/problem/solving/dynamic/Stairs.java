@@ -1,4 +1,4 @@
-package programmers.problem.solving.dynamic_programming;
+package programmers.problem.solving.dynamic;
 
 import java.util.Scanner;
 

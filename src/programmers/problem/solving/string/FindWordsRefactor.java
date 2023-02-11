@@ -1,9 +1,9 @@
-package programmers.problem.solving;
+package programmers.problem.solving.string;
 
 import java.util.Scanner;
 
 /**
- * Problem 01번 문제에 대한 리팩토링
+ * 문자찾기 리팩토링
  */
 public class FindWordsRefactor {
     private static void solution(String input1, String input2) {

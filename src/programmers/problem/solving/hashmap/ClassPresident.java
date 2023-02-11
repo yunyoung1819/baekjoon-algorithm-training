@@ -1,4 +1,4 @@
-package programmers.problem.solving;
+package programmers.problem.solving.hashmap;
 
 import java.util.HashMap;
 import java.util.Scanner;
