@@ -30,13 +30,11 @@ import java.util.Scanner;
  */
 public class LargeNumber {
 	private void solution(int[] arr) {
-		for (int i = 0; i < arr.length - 1; i++) {
+		for (int i = 0; i <= arr.length - 1; i++) {
 			if (i == 0) {
-				System.out.print(arr[0] + " ");
-			} else {
-				if (arr[i+1] > arr[i]) {
-					System.out.print(arr[i+1] + " ");
-				}
+				System.out.print(arr[0]);
+			} else if (arr[i] > arr[i-1]) {
+				System.out.print(arr[i] + " ");
 			}
 		}
 	}
