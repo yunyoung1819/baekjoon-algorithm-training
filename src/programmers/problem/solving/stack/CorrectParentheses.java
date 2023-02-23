@@ -16,20 +16,25 @@ import java.util.Stack;
  */
 public class CorrectParentheses {
 	private boolean solution(String input) {
+		// Stack 생성
 		Stack<Character> stack = new Stack<>();
 		char[] arr = input.toCharArray();
+		
 		for (char c : arr) {
+			// 입력값이 여는 괄호인 경우 stack에 push
 			if (c == '(') {
 				stack.push(c);
 			}
+			// 입력값이 닫는 괄호인 경우 stack에 pop
 			if (c == ')') {
-				if (stack.isEmpty()) {
+				if (stack.isEmpty()) { // 처음 입력값이 닫는 괄호인 경우 
 					return false;
 				} else {
 					stack.pop();
 				}
 			}
 		}
+		// 스택이 비어 있으면 (괄호 짝이 맞으면) true 아니면 false를 리턴
 		if (stack.isEmpty()) {
 			return true;
 		} else {
@@ -37,11 +42,14 @@ public class CorrectParentheses {
 		}
 	}
 	public static void main(String[] args) {
+		// 입력값 받기
 		Scanner sc = new Scanner(System.in);
 		String input = sc.next();
+		
 		CorrectParentheses correctParentheses = new CorrectParentheses();
 		boolean answer = correctParentheses.solution(input);
 		
+		// YES or NO 출력
 		System.out.print(answer == true ? "YES" : "NO");
 		sc.close();
 	}
