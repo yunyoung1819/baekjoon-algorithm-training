@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Palindrome2 {
 	public String solution(String s) {
 		String answer = "NO";
-		s = s.toUpperCase().replaceAll("[^A-Z]", ""); // replaceAll은 정규식 사용 가능, replace는 정규식 사용못함
+		s = s.toUpperCase().replaceAll("[^A-Z]", "");
 		String tmp = new StringBuilder(s).reverse().toString();
 		if (s.equals(tmp)) {
 			answer = "YES";
