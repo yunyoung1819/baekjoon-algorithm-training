@@ -14,7 +14,7 @@ import java.util.Stack;
  * 예시 출력1: EFLM
  */
 public class RemoveParenthesis {
-	public static String solution(String input) {
+	private static String solution(String input) {
 		String answer = "";
 		Stack<Character> stack = new Stack<>();
 		for (char c : input.toCharArray()) {
