@@ -1,5 +1,7 @@
 package programmers.problem.solving.sorting;
 
+import java.util.Scanner;
+
 /**
  * 문제 제목: 선택 정렬
  * 문제 설명: N개의 숫자가 입력되면 오름차순으로 정렬하여 출력하는 프로그램을 작성하세요.
@@ -12,7 +14,33 @@ package programmers.problem.solving.sorting;
  * 예시 출력1: 5 7 11 13 15 23
  */
 public class SelectionSort {
+	public int[] solution(int n, int[] arr) {
+		for (int i = 0; i < n-1; i++) {
+			int idx = i;
+			for (int j = i+1; j < n; j++) {
+				if (arr[j] < arr[idx]) {	
+					idx = j;
+				}
+			}
+			int tmp = arr[i];
+			arr[i] = arr[idx];
+			arr[idx] = tmp; 
+		}
+		return arr;
+	}
+	
 	public static void main(String[] args) {
-
+		SelectionSort T = new SelectionSort();
+		Scanner kb = new Scanner(System.in);
+		int n = kb.nextInt();
+		int[] arr = new int[n];
+		
+		for (int i = 0; i < n; i++) {
+			arr[i] = kb.nextInt();
+		}
+		for (int x : T.solution(n, arr)) {
+			System.out.print(x + " ");
+		}
+		kb.close();
 	}
 }
