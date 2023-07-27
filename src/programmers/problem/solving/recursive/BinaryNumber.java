@@ -1,4 +1,4 @@
-package programmers.problem.solving.recursive_tree_graph;
+package programmers.problem.solving.recursive;
 
 /**
  * 재귀함수를 이용한 이진수 출력
