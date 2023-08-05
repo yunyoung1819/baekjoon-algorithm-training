@@ -20,14 +20,14 @@ import java.util.Scanner;
  * 예시 입력 1: 5 14
  * 예시 출력 1: 3
  */
-public class FindCalf {
+public class FindCalf1 {
 	int answer = 0;
 	int [] dis = {1, -1, 5};
 	int[] ch;
 	Queue<Integer> Q = new LinkedList<>();
 
 	public static void main(String[] args) {
-		FindCalf C = new FindCalf();
+		FindCalf1 C = new FindCalf1();
 		Scanner kb = new Scanner(System.in);
 		int s = kb.nextInt();  // 현수의 출발점
 		int e = kb.nextInt();  // 도착점 (송아지 위치(
