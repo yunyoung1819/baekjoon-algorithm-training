@@ -6,12 +6,12 @@ import org.junit.jupiter.api.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-public class NewIdRecommendation_Ex5Test {
+public class NewIdRecommendationTest {
 
     @Test
     @DisplayName("카카오 신규 아이디 테스트")
     void idTest() {
-        NewIdRecommendation_Ex5 ex5 = new NewIdRecommendation_Ex5();
+        NewIdRecommendation ex5 = new NewIdRecommendation();
         String testId01 = "...!@BaT#*..y.abcdefghijklim";
         String testId02 = "z-+.^.";
         String testId03 = "=.=";

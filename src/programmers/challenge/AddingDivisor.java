@@ -12,7 +12,7 @@ package programmers.challenge;
  * 제한사항
  * 1 <= left <= right <= 1,000
  */
-public class AddingDivisor_Ex4 {
+public class AddingDivisor {
     public static int solution(int left, int right) {
         int answer = 0;
         for (int i = left; i <= right; i++) {

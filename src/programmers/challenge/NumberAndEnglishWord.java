@@ -20,7 +20,7 @@ package programmers.challenge;
  * s가 "zero" 또는 "0"으로 시작하는 경우는 주어지지 않습니다.
  * return 값이 1이상 2,000,000,000 이하의 정수가 되는 올바른 입력만 s로 주어집니다.
  */
-public class NumberAndEnglishWord_Ex3 {
+public class NumberAndEnglishWord {
     public static void main(String[] args) {
         String s = "23four5six7";
         System.out.println(solution(s));

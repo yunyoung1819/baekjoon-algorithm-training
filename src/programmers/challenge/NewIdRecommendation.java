@@ -31,7 +31,7 @@ import java.util.Locale;
  *  "bat.y.acvdefghi"입니다.
  *
  */
-public class NewIdRecommendation_Ex5 {
+public class NewIdRecommendation {
 
     private static final String REMOVE_REGEX = "[^a-z0-9\\-_.]*";
     private static final String DEFAULT_ID = "a";

@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class AddingDivisor_Ex4Test {
+public class AddingDivisorTest {
 
     @DisplayName("약수의 개수와 덧셈 테스트")
     @Test
@@ -15,7 +15,7 @@ public class AddingDivisor_Ex4Test {
         int left2 = 24;
         int right2 = 27;
 
-        AddingDivisor_Ex4 ex4 = new AddingDivisor_Ex4();
+        AddingDivisor ex4 = new AddingDivisor();
 
         assertEquals(43, ex4.solution(left1, right1));
         assertEquals(52, ex4.solution(left2, right2));

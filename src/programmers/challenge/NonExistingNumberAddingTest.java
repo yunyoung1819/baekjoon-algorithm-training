@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class NonExistingNumberAdding_Ex2Test {
+class NonExistingNumberAddingTest {
 
     @DisplayName("없는 숫자 더하기 테스트")
     @Test
@@ -13,8 +13,8 @@ class NonExistingNumberAdding_Ex2Test {
         int[] numbers1 = {1,2,3,4,6,7,8,0};
         int[] numbers2 = {5,8,4,0,6,7,9};
 
-        NonExistingNumberAdding_Ex2 nonExistingNumberAdding_ex2 = new NonExistingNumberAdding_Ex2();
-        assertEquals(14, nonExistingNumberAdding_ex2.solution(numbers1));
-        assertEquals(6, nonExistingNumberAdding_ex2.solution(numbers2));
+        NonExistingNumberAdding nonExistingNumberAdding_ = new NonExistingNumberAdding();
+        assertEquals(14, nonExistingNumberAdding_.solution(numbers1));
+        assertEquals(6, nonExistingNumberAdding_.solution(numbers2));
     }
 }
