@@ -57,7 +57,8 @@ public class CoinGreedy {
 				else return; //실패한 경우 
 			} if(change==0) return; //성공한 경우 
 		} 
-	 } 
+	 }
+
 	 public static void main(String[] args) {
 		 Scanner sc = new Scanner(System.in); 
 		 int numOfCoin=sc.nextInt(); 
