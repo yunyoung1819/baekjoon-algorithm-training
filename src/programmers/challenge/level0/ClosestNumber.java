@@ -8,7 +8,7 @@ import java.util.Arrays;
  * author: yun young
  * link: <a href="https://school.programmers.co.kr/learn/courses/30/lessons/120890">link</a>
  */
-public class CloseNumber {
+public class ClosestNumber {
     public static void main(String[] args) {
         int[] array1 = {1, 4, 2, 1};
         int n1 = 3;
