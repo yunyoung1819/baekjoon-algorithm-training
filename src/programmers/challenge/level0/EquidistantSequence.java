@@ -21,15 +21,13 @@ public class EquidistantSequence {
     }
 
     private static int solution(int a, int d, boolean[] included) {
-        int answer = 0;
-
+        int sum = 0;
         for (int i = 0; i < included.length; i++) {
             if (included[i]) {
-                answer += a;
+                sum += a;
             }
             a += d;
         }
-
-        return answer;
+        return sum;
     }
 }
