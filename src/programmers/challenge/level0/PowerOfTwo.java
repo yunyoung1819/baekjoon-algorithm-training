@@ -10,7 +10,7 @@ import java.util.Arrays;
  */
 public class PowerOfTwo {
     public static void main(String[] args) {
-        int[] arr = {22};
+        int[] arr = {1, 2, 3, 4, 5, 6};
         int[] answer = solution(arr);
 
         System.out.println(Arrays.toString(answer));
