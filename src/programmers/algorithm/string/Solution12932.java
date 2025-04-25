@@ -8,9 +8,9 @@ import java.util.Arrays;
  * author: yun young
  * link: https://school.programmers.co.kr/learn/courses/30/lessons/12932
  */
-public class Problem12932 {
+public class Solution12932 {
     public static void main(String[] args) {
-        Problem12932 problem = new Problem12932();
+        Solution12932 problem = new Solution12932();
         long n = 12345;
 
         int[] answer = problem.solution(n);
