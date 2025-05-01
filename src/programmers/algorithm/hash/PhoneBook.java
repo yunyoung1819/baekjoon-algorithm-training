@@ -17,10 +17,15 @@ public class PhoneBook {
     }
 
     private static boolean solution(String[] phone_book) {
-        // 정렬하고 바로 옆의 번호만 비교하는 방식으로 푼다.
+        // 전화번호부 배열을 정렬
         Arrays.sort(phone_book);
+
+        /*
+         * 정렬을 하면 접두어 관계에 있는 문자열끼리는 반드시 '옆에 붙어 있게' 된다.
+         * 예를 들어 ["119", "97674223", "1195524421"] -> ["119", "1195524421", "97674223"]
+         */
         for (int i = 0; i < phone_book.length - 1; i++) {
-            if (phone_book[i+1].startsWith(phone_book[i])) {  // 정렬하면 접두어인 번호는 옆에 위치하게 된다.
+            if (phone_book[i+1].startsWith(phone_book[i])) {
                 return false;
             }
         }
