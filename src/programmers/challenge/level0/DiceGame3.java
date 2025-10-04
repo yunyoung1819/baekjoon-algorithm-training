@@ -94,7 +94,7 @@ public class DiceGame3 {
         return a == b && b == c && c == d;
     }
 
-    private static int @NotNull [] sorted(int a, int b, int c, int d) {
+    private static int [] sorted(int a, int b, int c, int d) {
         int[] dice = {a, b, c, d};
         Arrays.sort(dice);
         return dice;
