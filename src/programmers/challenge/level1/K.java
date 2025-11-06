@@ -27,15 +27,17 @@ public class K {
     }
 
     private static int[] solution(int[] array, int[][] commands) {
-        List<Integer> result = new ArrayList<>();
+        int[] answer = new int[commands.length];
 
         for (int i = 0; i < commands.length; i++) {
-            int from = commands[i][0], to = commands[i][1], idx = commands[i][2];
-            int[] subArray = Arrays.copyOfRange(array, from - 1, to);
-            Arrays.sort(subArray);
-            result.add(subArray[idx-1]);
-        }
+            int from = commands[i][0] - 1;
+            int to = commands[i][1];
+            int k = commands[i][2] - 1;
 
-        return result.stream().mapToInt(Integer::intValue).toArray();
+            int[] slice = Arrays.copyOfRange(array, from , to);
+            Arrays.sort(slice);
+            answer[i] = slice[k];
+        }
+        return answer;
     }
 }
