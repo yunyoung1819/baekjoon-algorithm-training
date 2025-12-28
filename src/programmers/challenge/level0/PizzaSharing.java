@@ -1,0 +1,30 @@
+package programmers.challenge.level0;
+
+/**
+ * title: 피자 나눠먹기 (2)
+ * date: 2025.12.28
+ * author: yun young
+ * link: https://school.programmers.co.kr/learn/courses/30/lessons/120815
+ * description: 머쓱이네 피자가게는 피자를 여섯 조각으로 잘라줍니다.
+ * 피자를 나눠먹을 사람의 수 n이 매개변수로 주어질 때,
+ * n명이 주문한 피자를 남기지 않고 모두 같은 수의 피자 조각을 먹어야 한다면
+ * 최소 몇 판을 시켜야 하는지를 return 하도록 solution 함수를 완성해보세요.
+ */
+public class PizzaSharing {
+    public static void main(String[] args) {
+        int people = 4;
+        int pizzaCount = calculatePizzaCount(people);
+        System.out.println("pizza count = " + pizzaCount);
+    }
+
+    private static int calculatePizzaCount(int people) {
+        int pizzaSlice = 6;
+
+        while (pizzaSlice % people != 0) {
+            pizzaSlice += 6;
+        }
+
+        int pizzaCount = pizzaSlice / 6;
+        return pizzaCount;
+    }
+}
